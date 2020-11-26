@@ -3,11 +3,15 @@ import pandas as pd
 import requests
 import re, string
 from nltk.corpus import stopwords
+import nltk
 import pickle
 import time
 import random
 import datetime
 from os import path
+import sys
+nltk.download('stopwords')
+sys.setrecursionlimit(30000)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
