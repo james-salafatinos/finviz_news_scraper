@@ -127,6 +127,6 @@ def get_vocab(df, redo=False):
         vocabulary = iterate_over_links(df)
         df["vocab"] = list(vocabulary.values())
         #save_obj(df, date_str)
-        df.to_pickle(f'data/obj/{date_str}')
+        df.to_csv(f'data/obj/{date_str}.csv')
         return df
 
